@@ -1,0 +1,57 @@
+#sidebar {
+    background-color: #F8FAFF;
+    height: 100vh;
+    box-shadow: 0 0 15px #00000024;
+    padding: 3rem;
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    max-width: 24rem;
+    #logo {
+        max-width: 9rem;
+        margin-bottom: 9rem;
+    }
+    .user-information {
+        font-weight: 100;
+        padding-bottom: 1rem;
+        margin-left: 3rem;
+    }
+    .full-name {
+        padding-bottom: 1rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        display: flex;
+        transition: 0.3s all ease-in-out;
+        .dot {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 1rem;
+            width: 0rem;
+            height: 0rem;
+            background: $infobip-color;
+            border-radius: 0.15rem;
+            opacity: 0;
+            transition: 0.3s all ease-in-out;
+        }
+    }
+    &:hover {
+        .full-name {
+            margin-left: 1.19rem;
+            transition: 0.3s all ease-in-out;
+          .dot {
+              opacity: 1;
+              transition: 0.3s all ease-in-out;
+              width: 0.81rem;
+            height: 0.81rem;
+          }  
+        }
+    }
+    .address, .email {
+        padding-bottom: 1rem;
+        margin-left: 3rem;
+    }
+    .legal-entity {
+        margin-left: 3rem;
+    }
+}

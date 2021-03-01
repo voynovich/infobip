@@ -1,0 +1,89 @@
+
+@font-face {
+    src: url("/fonts/FSElliotWeb-Regular.woff") format("woff2");
+    font-family: "FSElliotWebRegular";
+}
+  
+@font-face {
+    src: url("/fonts/FSElliotWeb-Bold.woff") format("woff2");
+    font-family: "FSElliotWebBold";
+}
+
+@font-face {
+    font-family: 'FSElliotWebHeavy';
+    src: local('/fonts/FSElliotWeb-Heavy.woff') format('woff');
+}
+
+$infobip-color: #f15c22;
+$infobip-font-regular: 'FSElliotWebRegular', sans-serif;
+$infobip-font-bold: 'FSElliotWebBold', sans-serif;
+$infobip-border-radius: 0.3rem;
+
+body {
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #fff;
+    font-family: $infobip-font-regular;
+    input, input:focus, textarea, select, a { outline: none; }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 185, 185);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 136, 136);
+}
+
+/* arrows*/
+.arrow-left, .arrow-right, .arrow-bottom, .arrow-top {
+    width: 1px;
+    height: 1px;
+}
+.arrow-left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid $infobip-color;
+}
+.arrow-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $infobip-color;
+}
+.arrow-top {
+    border-bottom: 10px solid $infobip-color;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.arrow-bottom {
+    border-top: 10px solid $infobip-color;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+/*orange button*/
+.orange-button {
+    font-size: 1rem;
+    background: $infobip-color;
+    width: fit-content;
+    padding: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #fff;
+    border-radius: 0.15rem;
+    opacity: 0.9;
+    transition: 0.21s all ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00000024;
+    &:hover {
+        font-weight: 600;
+        opacity: 1;
+        transition: 0.21s all ease-in-out;
+    }
+}

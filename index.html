@@ -1,0 +1,652 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts Receivable | Infobip</title>
+    <meta name="description" content="Infobip Assignment">
+    <meta name="keywords" content="Infobip, Assignment">
+    <meta name="author" content="Stefan Vojnovic">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#f15c22">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="dist/bundle.css">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div id="logo">
+            <a href="https://www.infobip.com/">
+                <img src="/svg/infobip_logo.svg" alt="Infobip logo" />
+            </a>
+        </div>
+        <p class="user-information">User information:</p>
+        <div>
+            <div class="full-name">
+                <div class="dot"></div>Stefan Vojnović
+            </div>
+            <div class="address">Dubrovačka 6<br>Zadarska županija, Croatia</div>
+            <div class="email">info@voynovich.com</div>
+            <div class="legal-entity">Individual</div>
+        </div>
+    </div>
+    <main>
+        <div id="filter-wrapper">
+            <div id="advance-filtering-button">
+                <p>Advance filtering:</p>
+                <div class="arrow-bottom"></div>
+            </div>
+            <div id="controls">
+                <input type="text" placeholder="Search by customer name or ID">
+                <img src="png/search.png" alt="search">
+                <div class="orange-button" id="add-new-entry">Add new entry</div>
+            </div>
+            <div id="advance-filter">
+
+                <div class="filter-group">
+                    <p>Select companies</p>
+                    <ul class="dropdown-list">
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Hrvatska
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip USA
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Finland
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Norway
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Island
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Poland
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip UK
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Italy
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip China
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Japan
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <p>Select banks</p>
+                    <ul class="dropdown-list">
+                        <li>
+                            <label class="checkbox-wrapper">PBZ
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Erste
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">OTP bank
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Raiffeisen
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">Infobip Hrvatska
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <p>Select currencies</p>
+                    <ul class="dropdown-list">
+                        <li>
+                            <label class="checkbox-wrapper">HRK
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">EUR
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">USD
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">INR
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">NZD
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">CHF
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">NOK
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">GBB
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">AUD
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-wrapper">CAD
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <p>Select services</p>
+                    <ul class="dropdown-list">
+                        <li>SMS</li>
+                        <li>Voice</li>
+                        <li>Viber</li>
+                        <li>Whatsapp</li>
+                        <li>Other</li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group">
+                        <p>Filter dates from</p>
+                        <input type="month" min="2018-03" value="2018-05">
+                    </div>
+                    <div class="filter-group">
+                        <p>to</p>
+                        <input type="month" min="2018-03" value="2021-02">
+                    </div>
+                </div>
+                <div class="filter-group amount-group">
+                    <div class="filter-group">
+                        <p>Amount from</p>
+                        <div class="slider-wrapper">
+                            <input type="range" min="0" max="10000" value="0" class="input-slider" id="amount-from">
+                            <p><span id="first-amount"></span>$</p>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <p>to</p>
+                        <div class="slider-wrapper">
+                            <input type="range" min="1" max="10000" value="10000" class="input-slider" id="amount-to">
+                            <p><span id="second-amount"></span>$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group">
+                        <p>Paid</p>
+                        <label class="checkbox-wrapper paid-or-not">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <p>Not paid</p>
+                        <label class="checkbox-wrapper paid-or-not">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div id="main-filter">
+                <div id="headers">
+                    <div class="filter-title-head">Company&nbsp<span>(6)</span></div>
+                    <div class="filter-title-head"><span>Customer</span>&nbsp/&nbsp<span>ID</span></div>
+                    <div class="filter-title-head year">
+                        <div>Year</div>
+                        <div class="info"></div>
+                    </div>
+                    <div class="filter-title-head">Doc. no.</div>
+                    <div class="filter-title-head p-and-i"><span>P</span>&nbsp&&nbsp<span>I</span>
+                        <div class="info"></div>
+                    </div>
+                    <div class="filter-title-head">Bank</div>
+                    <div class="filter-title-head">Service</div>
+                    <div class="filter-title-head amount">Amount</div>
+                </div>
+                <form id="new-entry">
+                    <input type="text" placeholder="Infobip...">
+                    <input type="text" placeholder="Full name">
+                    <input type="number" placeholder="2021" min="2015" max="2021">
+                    <input type="text" placeholder="xxxx-0000">
+                    <input type="text" placeholder="P or I">
+                    <input type="text" placeholder="Clients bank">
+                    <input type="text" placeholder="">
+                    <input type="number" placeholder="">
+                    <div id="enter-new-entry" class="orange-button">Enter</div>
+                </form>
+            </div>
+        </div>
+
+        <div id="data-list-wrapper">
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Mario Zadranin</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">3652-inat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">15.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip USA</div>
+                    <div class="list-cell">Nikola Tesla</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">5763-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Barclys bank</div>
+                    <div class="list-cell">Voice</div>
+                    <div class="list-cell amount">8.500 USD</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip China</div>
+                    <div class="list-cell">Anamarija Kovačić</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">4565-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Bank of China</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">150.000 CNY</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Ivo Vojnović</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">1245-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">PBZ</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">21.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Rade Končar</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">7461-istat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">PBZ</div>
+                    <div class="list-cell">Viber</div>
+                    <div class="list-cell amount">48.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip USA</div>
+                    <div class="list-cell">Pavel Križan</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">7537-intat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Citigroup</div>
+                    <div class="list-cell">Other</div>
+                    <div class="list-cell amount">8.500 USD</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Tomislava Saša</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">5454-hrhr</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Splitska Banka</div>
+                    <div class="list-cell">Viber</div>
+                    <div class="list-cell amount">33.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip India</div>
+                    <div class="list-cell">Petra Medić</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">2333-inst</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Erste bank India</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">410.000 INR</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Italia</div>
+                    <div class="list-cell">Angelo Passati</div>
+                    <div class="list-cell">2019</div>
+                    <div class="list-cell">1515-bcst</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">WhatsApp</div>
+                    <div class="list-cell amount">1.200 EUR</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Marko Marković</div>
+                    <div class="list-cell">2019</div>
+                    <div class="list-cell">9990-inst</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">Other</div>
+                    <div class="list-cell amount">18.500 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Mario Zadranin</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">3652-inat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">15.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip USA</div>
+                    <div class="list-cell">Nikola Tesla</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">5763-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Barclys bank</div>
+                    <div class="list-cell">Voice</div>
+                    <div class="list-cell amount">8.500 USD</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip China</div>
+                    <div class="list-cell">Anamarija Kovačić</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">4565-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Bank of China</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">150.000 CNY</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Ivo Vojnović</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">1245-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">PBZ</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">21.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Rade Končar</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">7461-istat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">PBZ</div>
+                    <div class="list-cell">Viber</div>
+                    <div class="list-cell amount">48.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip USA</div>
+                    <div class="list-cell">Pavel Križan</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">7537-intat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Citigroup</div>
+                    <div class="list-cell">Other</div>
+                    <div class="list-cell amount">8.500 USD</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Tomislava Saša</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">5454-hrhr</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Splitska Banka</div>
+                    <div class="list-cell">Viber</div>
+                    <div class="list-cell amount">33.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip India</div>
+                    <div class="list-cell">Petra Medić</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">2333-inst</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Erste bank India</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">410.000 INR</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Italia</div>
+                    <div class="list-cell">Angelo Passati</div>
+                    <div class="list-cell">2019</div>
+                    <div class="list-cell">1515-bcst</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">WhatsApp</div>
+                    <div class="list-cell amount">1.200 EUR</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Marko Marković</div>
+                    <div class="list-cell">2019</div>
+                    <div class="list-cell">9990-inst</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">Other</div>
+                    <div class="list-cell amount">18.500 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Mario Zadranin</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">3652-inat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">Raiffeisen bank</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">15.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip USA</div>
+                    <div class="list-cell">Nikola Tesla</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">5763-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Barclys bank</div>
+                    <div class="list-cell">Voice</div>
+                    <div class="list-cell amount">8.500 USD</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip China</div>
+                    <div class="list-cell">Anamarija Kovačić</div>
+                    <div class="list-cell">2021</div>
+                    <div class="list-cell">4565-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">Bank of China</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">150.000 CNY</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Ivo Vojnović</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">1245-bcff</div>
+                    <div class="list-cell">I</div>
+                    <div class="list-cell">PBZ</div>
+                    <div class="list-cell">SMS</div>
+                    <div class="list-cell amount">21.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+            <div class="list-row">
+                <div class="entered-data">
+                    <div class="list-cell">Infobip Hrvatska</div>
+                    <div class="list-cell">Rade Končar</div>
+                    <div class="list-cell">2020</div>
+                    <div class="list-cell">7461-istat</div>
+                    <div class="list-cell">P</div>
+                    <div class="list-cell">PBZ</div>
+                    <div class="list-cell">Viber</div>
+                    <div class="list-cell amount">48.000 HRK</div>
+                </div>
+                <img src="png/edit.png" alt="edit-button">
+            </div>
+        </div>
+        <div id="navigation">
+            <ul id="number-list">
+                <li class="number-element active-num">25</li>
+                <li class="number-element">50</li>
+                <li class="number-element">100</li>
+            </ul>
+            <ul id="navigation-list">
+                <li class="navigation-element active-nav">1</li>
+                <li class="navigation-element">2</li>
+                <li class="navigation-element">3</li>
+                <li class="navigation-element">4</li>
+                <li class="navigation-element">5</li>
+                <li class="navigation-element">
+                    <div class="arrow-right"></div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+<script src="dist/bundle.js"></script>
+
+</html>
