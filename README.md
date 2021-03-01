@@ -8,7 +8,7 @@
   <h3 align="center">Accounts Receivable</h3>
   <br />
   <p align="left">
-    Prije početka riješavanja zadatka sam napravio par pretpostavki, na kojima je zasnovan dizajn https://www.figma.com/proto/tV9C9GtI3TTbR5pkPIQ5LG/Infobip?node-id=56%3A30&scaling=min-zoom. U realnom poslovnom slučaju bi bile korisne i informacije dobijene iz user case scenarija, zasnovanih na iskustvu korisnika.
+    Prije početka riješavanja zadatka sam napravio nekolicinu pretpostavki, na kojima je zasnovan dizajn https://www.figma.com/proto/tV9C9GtI3TTbR5pkPIQ5LG/Infobip?node-id=56%3A30&scaling=min-zoom. U realnom poslovnom slučaju bi bile korisne i informacije dobijene iz user case scenarija, zasnovanih na iskustvu korisnika.
   </p>
   <br />
   <p align="left">
