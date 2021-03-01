@@ -89,7 +89,8 @@ main {
                 .dropdown-list {
                     border-radius: $infobip-border-radius;
                     border: 1px solid rgb(199, 199, 199);
-                    height: 9.9rem;
+                    max-height: 11rem;
+                    height: fit-content;
                     overflow-x: hidden;
                     overflow-y: scroll;
                     padding-left: 0.3rem;
@@ -527,7 +528,7 @@ main {
     #navigation {
         height: 2rem;
         line-height: 2rem;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
         padding-top: 0.6rem;
         color: $infobip-color;
         width: calc(100% - 10.3rem);
